@@ -1,12 +1,16 @@
+import { Heading } from '../src/components/Heading'
 import { Text } from '../src/components/Text'
+import { Button } from '../src/components/Button'
 import './styles/global.css'
 
 export function App() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold">Hello World!</h1>
-      <Text>Lorem ipsum</Text>
-      <button className="px-4 py-2 rounded-md bg-cyan-500 hover:bg-cyan-300">Enviar</button>
+    <div className="p-4 bg-gray-900 h-[100vh] flex justify-center items-center">
+      <div className="max-with[400px] text-center flex flex-col gap-4">
+        <Heading size="lg">Hello World!</Heading>
+        <Text>Lorem ipsum</Text>
+        <Button>Enviar</Button>
+      </div>
     </div>
   )
 }
