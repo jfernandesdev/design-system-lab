@@ -7,6 +7,7 @@ Contrução de um Design System do Figma ao React.
 - [x] Estrutura visual do Design System no Figma;
 - [x] Definição dos tokens e os componentes;
 - [x] Criação dos componentes e Documentação utilizando Storybook;
+- [x] Testes automatizados e simulação de interação do usuário;
 - [x] Automatização do processo de deploy (CI/CD).
 
 ## Tecnologias utilizadas: 🚀
@@ -18,6 +19,8 @@ Contrução de um Design System do Figma ao React.
 - Radix UI | ^1.0.0
 - Storybook | ^6.5.12 -D
 - CLSX | ^1.2.1
+- Storybook/jest | ^0.0.10 -D
+- Storybbook/testing-library | ^0.0.13 -D
 
 ## Screenshot 
 
@@ -28,20 +31,24 @@ Contrução de um Design System do Figma ao React.
 | <img src="https://github.com/jfernandesdev/design-system-lab/blob/f44152f37f2c8174d022f6f65af64bf6a0ee8263/public/layout-1.PNG" /> | <img src="https://github.com/jfernandesdev/design-system-lab/blob/f44152f37f2c8174d022f6f65af64bf6a0ee8263/public/layout-2.PNG" /> | <img src="https://github.com/jfernandesdev/design-system-lab/blob/f44152f37f2c8174d022f6f65af64bf6a0ee8263/public/layout-3.PNG" />
 
 
-
 ##  Rodando o projeto localmente: ⚙
 
-Clone o projeto e instale as depedências
+Clone o projeto e instale as dependências
 ```sh
 $ npm i
 ```
 
-Rode a documentação no storybook: (abrirá http://localhost:6006)
+Para rodar a documentação storybook: (abrirá http://localhost:6006)
 ```sh
 $ npm run storybook
 ```
 
-Rode a aplicação: (abrirá http://localhost:3000)
+Parar rodar os testes automatizados no terminal:
+```sh
+$ npm run test-storybook
+```
+
+Para rodar a aplicação: (abrirá http://localhost:3000)
 ```sh
 $ npm run dev
 ```
